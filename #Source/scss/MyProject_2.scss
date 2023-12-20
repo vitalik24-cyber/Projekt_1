@@ -1,24 +1,23 @@
 @import "Nullstyles.scss";
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Kalnia:wght@400;500;600&family=Whisper&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Kalnia:wght@400;500;600&family=Whisper&display=swap");
 
 // Переменные (Шрифт)
-$fz_1:14px;
-$fz_2:16px;
-$fz_3:18px;
-$fz_4:20px;
-$fz_5:25px;
+$fz_1: 14px;
+$fz_2: 16px;
+$fz_3: 18px;
+$fz_4: 20px;
+$fz_5: 25px;
 
 // Пременные (Цвет)
 $color_1: #fff;
 $color_2: #000;
-$color_3: #FF0000;
+$color_3: #ff0000;
 $color_4: #008080;
-$color_5: #D89B64;
+$color_5: #d89b64;
 $color_6: #485471;
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	
 }
 // Оболочка
 .wrapper {
@@ -30,7 +29,7 @@ body {
 }
 // Шапка
 .header {
-	background: url('/img/fon_header_1.png') fixed repeat;
+	background: url("/img/fon_header_1.png") fixed repeat;
 	height: 950px;
 }
 .container {
@@ -48,18 +47,17 @@ body {
 	align-items: center;
 	//border: 2px solid red;
 	margin: 66px 0px 0px 0px;
-	
 }
 .logo_icon {
-	& img{
+	& img {
 		border-radius: 50%;
 	}
 }
 .logo_text {
 	font-family: "Kantia", serif;
-	font-size: $fz_4 ;
+	font-size: $fz_4;
 	padding-left: 10px;
-	& p{
+	& p {
 		color: $color_1;
 	}
 }
@@ -70,34 +68,27 @@ body {
 	align-items: center;
 	//border: yellow 2px solid;
 	margin: 79px 0px 0px 0px;
-	
-	
 }
 .menu_list {
 	display: flex;
-	
-	
 }
 .menu_link {
 	font-family: "Kantia", serif;
 	font-size: $fz_3;
 	padding-left: 100px;
 	padding: 0px auto;
-	color: $color_1;	
-	
+	color: $color_1;
 }
 
 // Переключение картинок
-.swipe{
+.swipe {
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 1823px;
-
 }
 .swipe_left {
 	display: flex;
-
 }
 .header_img {
 	display: flex;
@@ -118,18 +109,17 @@ body {
 	justify-content: space-between;
 	height: 213px;
 	margin-top: -40px;
-	& button{
+	& button {
 		font-size: $fz_4;
-		background:rgba(255, 255, 255, 0) ;
-		color: #FFFFFF;
-		
+		background: rgba(255, 255, 255, 0);
+		color: #ffffff;
 	}
 }
 .button_text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	& p{
+	& p {
 		font-size: $fz_4;
 		color: $color_6;
 	}
@@ -138,14 +128,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	& button{
+	& button {
 		width: 234px;
 		height: 65px;
 		font-size: $fz_4;
 		border: 1px $color_6 solid;
-		background:rgba(255, 255, 255, 0) ;
+		background: rgba(255, 255, 255, 0);
 	}
-	& a{
+	& a {
 		color: $color_5;
 	}
 }
@@ -156,23 +146,22 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 .perfection_text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('/img/gratia_120.png')   ;
+	background-image: url("/img/gratia_120.png");
 	margin: 0px auto;
 	width: 596px;
 	height: 188px;
-	& h1{
+	& h1 {
 		font-size: 35px;
 		font-weight: 700;
 		text-shadow: 5px -10px 15px #000;
 	}
-	& p{
+	& p {
 		font-size: 25px;
 		text-shadow: 5px -10px 15px #000;
 		margin-top: 39px;
@@ -180,7 +169,7 @@ body {
 }
 .perfection_body {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	align-items: center;
 }
 .body_img_1 {
@@ -189,17 +178,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	//border: 1px $color_2 solid;
-	background-image: url('/img/dark_127.png');
+	background-image: url("/img/dark_127.png");
 	width: 651px;
 	height: 490px;
-	& h2{
+	& h2 {
 		font-size: 35px;
 		color: $color_5;
 		margin-bottom: 34px;
-		font-weight:700;
+		font-weight: 700;
 		text-shadow: 5px -10px 15px #000;
 	}
-	& p{
+	& p {
 		font-size: 25px;
 		color: $color_1;
 		padding-top: 34px;
@@ -209,19 +198,19 @@ body {
 .body_img_2 {
 	display: flex;
 	flex-direction: column;
-	justify-content:flex-end;
+	justify-content: flex-end;
 	align-items: center;
 	//border: 1px $color_2 solid;
-	background-image: url('/img/box_136.png')   ;
+	background-image: url("/img/box_136.png");
 	width: 574px;
 	height: 861px;
-	& h2{
+	& h2 {
 		font-size: 35px;
 		padding-bottom: 68px;
-		font-weight:700;
+		font-weight: 700;
 		text-shadow: 5px -10px 15px #000;
 	}
-	& p{
+	& p {
 		font-size: 25px;
 		padding-bottom: 34px;
 		text-shadow: 5px -10px 15px #000;
@@ -233,17 +222,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	//border: 1px $color_2 solid;
-	background-image: url('/img/dark_151.png');
+	background-image: url("/img/dark_151.png");
 	width: 650px;
 	height: 490px;
-	& h2{
+	& h2 {
 		font-size: 35px;
 		color: $color_5;
 		margin-bottom: 34px;
-		font-weight:700;
+		font-weight: 700;
 		text-shadow: 5px -10px 15px #000;
 	}
-	& p{
+	& p {
 		font-size: 22px;
 		color: $color_1;
 		padding-top: 34px;
@@ -256,17 +245,17 @@ body {
 	align-items: center;
 	margin-top: 104px;
 	margin-bottom: 104px;
-	& button{
+	& button {
 		color: $color_5;
 		font-size: 25px;
-		background-color:$color_1;
+		background-color: $color_1;
 	}
 }
 .details {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('/img/photo_180.png');
+	background-image: url("/img/photo_180.png");
 	height: 708px;
 }
 .details_body {
@@ -275,8 +264,8 @@ body {
 	align-items: center;
 	width: 777px;
 	height: 434px;
-	margin:  0px auto;
-	background-image: url('/img/white_box_246.png');
+	margin: 0px auto;
+	background-image: url("/img/white_box_246.png");
 }
 .details_body_content {
 	display: flex;
@@ -285,23 +274,22 @@ body {
 	align-items: center;
 	width: 699px;
 	height: 356px;
-	border: 1px  rgba(138, 143, 156, 0.5) solid;
-	& h2{
+	border: 1px rgba(138, 143, 156, 0.5) solid;
+	& h2 {
 		font-size: 35px;
 		font-weight: 700;
 	}
-	& p{
+	& p {
 		font-family: "Kantia", serif;
 		font-style: italic;
 		font-size: $fz_5;
 	}
-	& button{
+	& button {
 		width: 313px;
 		height: 65px;
 		border: 1px rgba(21, 27, 40, 0.15) solid;
 		background-color: $color_1;
 		color: $color_5;
-
 	}
 }
 .achievement {
@@ -315,13 +303,13 @@ body {
 	margin: 0px auto;
 	width: 596px;
 	height: 188px;
-	background-image: url('/img/gratia_120.png')  ;
-	& h2{
+	background-image: url("/img/gratia_120.png");
+	& h2 {
 		font-size: 35px;
 		font-weight: 700;
 	}
-	& p{
-		font-family: 'Crimson Text';
+	& p {
+		font-family: "Crimson Text";
 		font-size: 24px;
 		line-height: 36px;
 		font-weight: 400;
@@ -341,15 +329,15 @@ body {
 	align-items: center;
 	width: 636px;
 	height: 300px;
-	background-image: url('/img/box_achievement_1.png');
-	& h2{
+	background-image: url("/img/box_achievement_1.png");
+	& h2 {
 		font-family: Montserrat;
 		font-size: 24px;
 		line-height: 84px;
 		font-weight: 700;
 		color: $color_5;
 	}
-	& p{
+	& p {
 		font-family: "Crimson Text";
 		font-size: 24px;
 		line-height: 36px;
@@ -365,16 +353,16 @@ body {
 	align-items: center;
 	width: 636px;
 	height: 375px;
-	background-image: url('/img/box_achievement.png');
-	& h2{
+	background-image: url("/img/box_achievement.png");
+	& h2 {
 		font-family: Montserrat;
 		font-size: 24px;
 		line-height: 84px;
 		font-weight: 700;
 		color: $color_5;
 	}
-	& p{
-		font-family: 'Crimson Text';
+	& p {
+		font-family: "Crimson Text";
 		font-size: 24px;
 		line-height: 36px;
 		font-weight: 400;
@@ -389,16 +377,16 @@ body {
 	align-items: center;
 	width: 636px;
 	height: 300px;
-	background-image: url('/img/box_achievement_1.png');
-	& h2{
+	background-image: url("/img/box_achievement_1.png");
+	& h2 {
 		font-family: Montserrat;
 		font-size: 24px;
 		line-height: 84px;
 		font-weight: 700;
 		color: $color_5;
 	}
-	& p{
-		font-family: 'Crimson Text';
+	& p {
+		font-family: "Crimson Text";
 		font-size: 24px;
 		line-height: 36px;
 		font-weight: 400;
