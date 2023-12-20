@@ -71,6 +71,129 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 2000px;
+  max-height: 4387px;
+  margin: 0px auto;
+  overflow: hidden;
+  border: #008080 2px solid;
+}
+
+.header {
+  background: url("/img/fon_header_1.png") fixed repeat;
+  height: 950px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  max-width: 1823px;
+  margin: 0px auto;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 66px 0px 0px 0px;
+}
+
+.logo_icon img {
+  border-radius: 50%;
+}
+
+.logo_text {
+  font-family: "Kantia", serif;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.logo_text p {
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 79px 0px 0px 0px;
+}
+
+.menu_list {
+  display: flex;
+}
+
+.menu_link {
+  font-family: "Kantia", serif;
+  font-size: 18px;
+  padding-left: 100px;
+  padding: 0px auto;
+  color: #fff;
+}
+
+.swipe {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1823px;
+}
+
+.swipe_left {
+  display: flex;
+}
+
+.header_img {
+  display: flex;
+}
+
+.swipe_right {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 1823px;
+}
+
+.button_number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 213px;
+  margin-top: -40px;
+}
+.button_number button {
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0);
+  color: #FFFFFF;
+}
+
+.button_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_text p {
+  font-size: 20px;
+  color: #485471;
+}
+
+.button_book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_book button {
+  width: 234px;
+  height: 65px;
+  font-size: 20px;
+  border: 1px #485471 solid;
+  background: rgba(255, 255, 255, 0);
+}
+.button_book a {
+  color: #D89B64;
 }

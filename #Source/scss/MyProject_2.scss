@@ -1,6 +1,151 @@
 @import "Nullstyles.scss";
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Kalnia:wght@400;500;600&family=Whisper&display=swap');
+
+// Переменные (Шрифт)
+$fz_1:14px;
+$fz_2:16px;
+$fz_3:18px;
+$fz_4:20px;
+$fz_5:25px;
+
+// Пременные (Цвет)
+$color_1: #fff;
+$color_2: #000;
+$color_3: #FF0000;
+$color_4: #008080;
+$color_5: #D89B64;
+$color_6: #485471;
+
 body {
-	height: 100%;
-	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+// Оболочка
+.wrapper {
+	max-width: 2000px;
+	max-height: 4387px;
+	margin: 0px auto;
+	overflow: hidden;
+	border: #008080 2px solid;
+}
+// Шапка
+.header {
+	background: url('/img/fon_header_1.png') fixed repeat;
+	height: 950px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex: 0 1 auto;
+	flex-wrap: wrap;
+	max-width: 1823px;
+	margin: 0px auto;
+}
+//Логотип с текстом
+.header_logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//border: 2px solid red;
+	margin: 66px 0px 0px 0px;
+	
+}
+.logo_icon {
+	& img{
+		border-radius: 50%;
+	}
+}
+.logo_text {
+	font-family: "Kantia", serif;
+	font-size: $fz_4 ;
+	padding-left: 10px;
+	& p{
+		color: $color_1;
+	}
+}
+
+// Меню
+.menu {
+	display: flex;
+	align-items: center;
+	//border: yellow 2px solid;
+	margin: 79px 0px 0px 0px;
+	
+	
+}
+.menu_list {
+	display: flex;
+	
+	
+}
+.menu_link {
+	font-family: "Kantia", serif;
+	font-size: $fz_3;
+	padding-left: 100px;
+	padding: 0px auto;
+	color: $color_1;	
+	
+}
+
+// Переключение картинок
+.swipe{
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1823px;
+
+}
+.swipe_left {
+	display: flex;
+
+}
+.header_img {
+	display: flex;
+}
+.swipe_right {
+	display: flex;
+}
+
+// КНОПКИ HEADER
+.button {
+	display: flex;
+	justify-content: space-between;
+	width: 1823px;
+}
+.button_number {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 213px;
+	margin-top: -40px;
+	& button{
+		font-size: $fz_4;
+		background:rgba(255, 255, 255, 0) ;
+		color: #FFFFFF;
+		
+	}
+}
+.button_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& p{
+		font-size: $fz_4;
+		color: $color_6;
+	}
+}
+.button_book {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& button{
+		width: 234px;
+		height: 65px;
+		font-size: $fz_4;
+		border: 1px $color_6 solid;
+		background:rgba(255, 255, 255, 0) ;
+	}
+	& a{
+		color: $color_5;
+	}
 }
