@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 .wrapper {
@@ -169,7 +170,7 @@ body {
 .button_number button {
   font-size: 20px;
   background: rgba(255, 255, 255, 0);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .button_text {
@@ -195,7 +196,7 @@ body {
   background: rgba(255, 255, 255, 0);
 }
 .button_book a {
-  color: #D89B64;
+  color: #d89b64;
 }
 
 .perfection {
@@ -242,7 +243,7 @@ body {
 }
 .body_img_1 h2 {
   font-size: 35px;
-  color: #D89B64;
+  color: #d89b64;
   margin-bottom: 34px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
@@ -286,7 +287,7 @@ body {
 }
 .body_img_3 h2 {
   font-size: 35px;
-  color: #D89B64;
+  color: #d89b64;
   margin-bottom: 34px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
@@ -306,7 +307,7 @@ body {
   margin-bottom: 104px;
 }
 .perfection_button button {
-  color: #D89B64;
+  color: #d89b64;
   font-size: 25px;
   background-color: #fff;
 }
@@ -352,7 +353,7 @@ body {
   height: 65px;
   border: 1px rgba(21, 27, 40, 0.15) solid;
   background-color: #fff;
-  color: #D89B64;
+  color: #d89b64;
 }
 
 .achievement {
@@ -402,7 +403,7 @@ body {
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
-  color: #D89B64;
+  color: #d89b64;
 }
 .achievement_diffrent p {
   font-family: "Crimson Text";
@@ -427,7 +428,7 @@ body {
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
-  color: #D89B64;
+  color: #d89b64;
 }
 .achievement_fresh p {
   font-family: "Crimson Text";
@@ -452,7 +453,7 @@ body {
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
-  color: #D89B64;
+  color: #d89b64;
 }
 .achievement_best p {
   font-family: "Crimson Text";
