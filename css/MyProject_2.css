@@ -97,7 +97,7 @@ body {
   margin: 0px auto;
 }
 
-.header_logo {
+.header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,20 +105,20 @@ body {
   margin: 66px 0px 0px 0px;
 }
 
-.logo_icon img {
+.logo__icon img {
   border-radius: 50%;
 }
 
-.logo_text {
+.logo__text {
   font-family: "Kantia", serif;
   font-size: 20px;
   padding-left: 10px;
 }
-.logo_text p {
+.logo__text p {
   color: #fff;
 }
 
-.header_burger {
+.header__burger {
   display: none;
 }
 
@@ -128,11 +128,11 @@ body {
   margin: 79px 0px 0px 0px;
 }
 
-.menu_list {
+.menu__list {
   display: flex;
 }
 
-.menu_link {
+.menu__link {
   font-family: "Kantia", serif;
   font-size: 18px;
   padding-left: 100px;
@@ -147,13 +147,13 @@ body {
   .header {
     height: 400px;
   }
-  .header_logo {
+  .header__logo {
     position: relative;
     top: 0;
     left: 30px;
     flex: 0 0 70px;
   }
-  .header_burger {
+  .header__burger {
     display: block;
     text-align: right;
     position: relative;
@@ -163,7 +163,7 @@ body {
     position: relative;
     z-index: 3;
   }
-  .header_burger span {
+  .header__burger span {
     position: absolute;
     background-color: #fff;
     position: absolute;
@@ -173,8 +173,8 @@ body {
     top: 9px;
     transition: all 0.3s ease 0s;
   }
-  .header_burger:before,
-  .header_burger:after {
+  .header__burger:before,
+  .header__burger:after {
     content: "";
     background-color: #fff;
     position: absolute;
@@ -183,20 +183,20 @@ body {
     left: 0;
     transition: all 0.5s ease 0s;
   }
-  .header_burger:before {
+  .header__burger:before {
     top: 0;
   }
-  .header_burger:after {
+  .header__burger:after {
     bottom: 0;
   }
-  .header_burger.active span {
+  .header__burger.active span {
     transform: scale(0);
   }
-  .header_burger.active:before {
+  .header__burger.active:before {
     transform: rotate(45deg);
     top: 9px;
   }
-  .header_burger.active:after {
+  .header__burger.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
@@ -211,68 +211,68 @@ body {
   .menu.active {
     top: -13px;
   }
-  .menu_list {
+  .menu__list {
     display: flex;
   }
-  .menu_link {
+  .menu__link {
     color: #fff;
     font-size: 18px;
   }
-  .menu_link:hover {
+  .menu__link:hover {
     color: #d89b64;
   }
-  .swipe_img img {
+  .swipe__img img {
     width: 350px;
   }
-  .swipe_left {
+  .swipe__left {
     height: 50px;
   }
-  .swipe_right {
+  .swipe__right {
     height: 50px;
   }
-  .button_number {
+  .button__number {
     display: block;
     position: relative;
     top: 0;
     left: 25px;
   }
-  .button_number button {
+  .button__number button {
     position: absolute;
     left: 10px;
     max-width: 200px;
     margin-top: 40px;
   }
-  .button_number button:hover {
+  .button__number button:hover {
     color: #d89b64;
   }
-  .button_number button:nth-child(2) {
+  .button__number button:nth-child(2) {
     position: absolute;
     left: 50px;
     top: 0;
   }
-  .button_number button:nth-child(3) {
+  .button__number button:nth-child(3) {
     position: absolute;
     left: 90px;
     top: 0;
   }
-  .button_text {
+  .button__text {
     height: 30px;
     width: 300px;
   }
-  .button_text p {
+  .button__text p {
     margin-left: 105px;
     text-align: center;
   }
-  .button_book {
+  .button__book {
     width: 150px;
   }
-  .button_book button {
+  .button__book button {
     position: relative;
     top: -60px;
     max-width: 120px;
     max-height: 30px;
   }
-  .button_book a {
+  .button__book a {
     font-size: 14px;
   }
 }
@@ -283,15 +283,15 @@ body {
   width: 1823px;
 }
 
-.swipe_left {
+.swipe__left {
   display: flex;
 }
 
-.swipe_img {
+.swipe__img {
   display: flex;
 }
 
-.swipe_right {
+.swipe__right {
   display: flex;
 }
 
@@ -301,45 +301,45 @@ body {
   width: 1823px;
 }
 
-.button_number {
+.button__number {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 213px;
   margin-top: -40px;
 }
-.button_number button {
+.button__number button {
   font-size: 20px;
   background: rgba(255, 255, 255, 0);
   color: #ffffff;
 }
-.button_number button:hover {
+.button__number button:hover {
   color: #d89b64;
 }
 
-.button_text {
+.button__text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.button_text p {
+.button__text p {
   font-size: 20px;
   color: #485471;
 }
 
-.button_book {
+.button__book {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.button_book button {
+.button__book button {
   width: 234px;
   height: 65px;
   font-size: 20px;
   border: 1px #485471 solid;
   background: rgba(255, 255, 255, 0);
 }
-.button_book a {
+.button__book a {
   color: #d89b64;
 }
 
@@ -349,7 +349,7 @@ body {
   justify-content: space-between;
 }
 
-.perfection_text {
+.perfection__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,24 +359,24 @@ body {
   width: 596px;
   height: 188px;
 }
-.perfection_text h1 {
+.perfection__text h1 {
   font-size: 35px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
 }
-.perfection_text p {
+.perfection__text p {
   font-size: 25px;
   text-shadow: 5px -10px 15px #000;
   margin-top: 39px;
 }
 
-.perfection_body {
+.perfection__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.body_img_1 {
+.body__img1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,21 +385,21 @@ body {
   width: 651px;
   height: 490px;
 }
-.body_img_1 h2 {
+.body__img1 h2 {
   font-size: 35px;
   color: #d89b64;
   margin-bottom: 34px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
 }
-.body_img_1 p {
+.body__img1 p {
   font-size: 25px;
   color: #fff;
   padding-top: 34px;
   text-shadow: 15px -10px 15px #000;
 }
 
-.body_img_2 {
+.body__img2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -408,19 +408,19 @@ body {
   width: 574px;
   height: 861px;
 }
-.body_img_2 h2 {
+.body__img2 h2 {
   font-size: 35px;
   padding-bottom: 68px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
 }
-.body_img_2 p {
+.body__img2 p {
   font-size: 25px;
   padding-bottom: 34px;
   text-shadow: 5px -10px 15px #000;
 }
 
-.body_img_3 {
+.body__img3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,28 +429,28 @@ body {
   width: 650px;
   height: 490px;
 }
-.body_img_3 h2 {
+.body__img3 h2 {
   font-size: 35px;
   color: #d89b64;
   margin-bottom: 34px;
   font-weight: 700;
   text-shadow: 5px -10px 15px #000;
 }
-.body_img_3 p {
+.body__img3 p {
   font-size: 22px;
   color: #fff;
   padding-top: 34px;
   text-shadow: 5px -10px 15px #000;
 }
 
-.perfection_button {
+.perfection__button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 104px;
   margin-bottom: 104px;
 }
-.perfection_button button {
+.perfection__button button {
   color: #d89b64;
   font-size: 25px;
   background-color: #fff;
@@ -464,7 +464,7 @@ body {
   height: 708px;
 }
 
-.details_body {
+.details__body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,7 +504,7 @@ body {
   margin-bottom: 50px;
 }
 
-.achievement_text {
+.achievement__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -514,11 +514,11 @@ body {
   height: 188px;
   background-image: url("/img/gratia_120.png");
 }
-.achievement_text h2 {
+.achievement__text h2 {
   font-size: 35px;
   font-weight: 700;
 }
-.achievement_text p {
+.achievement__text p {
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 36px;
@@ -527,13 +527,13 @@ body {
   color: #8b909d;
 }
 
-.achievement_body {
+.achievement__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.achievement_diffrent {
+.achievement__diffrent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -542,14 +542,14 @@ body {
   height: 300px;
   background-image: url("/img/box_achievement_1.png");
 }
-.achievement_diffrent h2 {
+.achievement__diffrent h2 {
   font-family: Montserrat;
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
   color: #d89b64;
 }
-.achievement_diffrent p {
+.achievement__diffrent p {
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 36px;
@@ -558,7 +558,7 @@ body {
   color: #8b909d;
 }
 
-.achievement_fresh {
+.achievement__fresh {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -567,14 +567,14 @@ body {
   height: 375px;
   background-image: url("/img/box_achievement.png");
 }
-.achievement_fresh h2 {
+.achievement__fresh h2 {
   font-family: Montserrat;
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
   color: #d89b64;
 }
-.achievement_fresh p {
+.achievement__fresh p {
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 36px;
@@ -583,7 +583,7 @@ body {
   color: #fff;
 }
 
-.achievement_best {
+.achievement__best {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -592,14 +592,14 @@ body {
   height: 300px;
   background-image: url("/img/box_achievement_1.png");
 }
-.achievement_best h2 {
+.achievement__best h2 {
   font-family: Montserrat;
   font-size: 24px;
   line-height: 84px;
   font-weight: 700;
   color: #d89b64;
 }
-.achievement_best p {
+.achievement__best p {
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 36px;

@@ -1,7 +1,7 @@
 // Работа с меню
 $(document).ready(function() {
-	$('.header_burger').click(function(event) {
-		$('.header_burger,.menu').toggleClass('active');
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });
