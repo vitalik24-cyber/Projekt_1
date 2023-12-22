@@ -482,6 +482,9 @@ body {
 		border: 1px rgba(21, 27, 40, 0.15) solid;
 		background-color: $color_1;
 		color: $color_5;
+		&:hover{
+			color: $color_4;
+		}
 	}
 }
 .achievement {

@@ -540,6 +540,9 @@ body {
   background-color: #fff;
   color: #d89b64;
 }
+.details_body_content button:hover {
+  color: #008080;
+}
 
 .achievement {
   margin-bottom: 50px;
