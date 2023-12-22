@@ -338,6 +338,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background-color: $color_4;
 }
 .perfection__text {
 	display: flex;
@@ -370,7 +371,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	//border: 1px $color_2 solid;
-	border-radius: 20%;
+	border-radius: 50px;
 	background-image: url("/img/dark_127.png");
 	width: 651px;
 	height: 490px;
@@ -391,9 +392,9 @@ body {
 .body__img2 {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
-	border-radius: 20%;
+	border-radius: 50px;
 	//border: 1px $color_2 solid;
 	background-image: url("/img/box_136.png");
 	width: 574px;
@@ -415,7 +416,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 20%;
+	border-radius: 50px;
 	//border: 1px $color_2 solid;
 	background-image: url("/img/dark_151.png");
 	width: 650px;
@@ -438,12 +439,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 104px;
-	margin-bottom: 104px;
+	margin: 0px auto;
+	margin-top: 54px;
+	margin-bottom: 54px;
+	border: 1px $color_2 solid;
+	border-radius: 10px;
+	width: 325px;
+	height: 35px;
 	& button {
 		color: $color_5;
 		font-size: 25px;
-		background-color: $color_1;
+		background-color: $color_4;
 	}
 }
 .details {
@@ -491,7 +497,8 @@ body {
 	}
 }
 .achievement {
-	margin-bottom: 50px;
+	//margin-bottom: 50px;
+	background-color: $color_6;
 }
 .achievement__text {
 	display: flex;
@@ -517,7 +524,7 @@ body {
 }
 .achievement__body {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 .achievement__diffrent {
@@ -527,6 +534,7 @@ body {
 	align-items: center;
 	width: 636px;
 	height: 300px;
+	border-radius: 50px;
 	background-image: url("/img/box_achievement_1.png");
 	& h2 {
 		font-family: Montserrat;
@@ -549,6 +557,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 50px;
 	width: 636px;
 	height: 375px;
 	background-image: url("/img/box_achievement.png");
@@ -573,6 +582,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 50px;
 	width: 636px;
 	height: 300px;
 	background-image: url("/img/box_achievement_1.png");
