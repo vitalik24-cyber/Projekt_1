@@ -361,7 +361,7 @@ body {
 }
 .perfection__body {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 .body__img1 {
@@ -370,6 +370,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	//border: 1px $color_2 solid;
+	border-radius: 20%;
 	background-image: url("/img/dark_127.png");
 	width: 651px;
 	height: 490px;
@@ -392,6 +393,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+	border-radius: 20%;
 	//border: 1px $color_2 solid;
 	background-image: url("/img/box_136.png");
 	width: 574px;
@@ -413,6 +415,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 20%;
 	//border: 1px $color_2 solid;
 	background-image: url("/img/dark_151.png");
 	width: 650px;
