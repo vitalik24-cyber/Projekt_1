@@ -83,6 +83,9 @@ body {
 	padding-left: 100px;
 	padding: 0px auto;
 	color: $color_1;
+	&:hover{
+		color: $color_5;
+	}
 }
 
 // Рисуем бургер меню + адаптация
@@ -220,7 +223,44 @@ body {
 			
 		}
 	}
-}
+	.perfection__text{
+		& p{
+			text-align: center;
+		}
+	}
+	.perfection__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.details{
+		margin: 0px auto;
+		max-width: 750px;
+		max-height: 450px;
+	}
+	.details__body{
+		max-width: 600px;
+		max-height: 300px;
+	}
+	.details_body_content{
+		max-width: 550px;
+		max-height: 255px;
+		& h2{
+			font-size: $fz_2;
+		}
+		& p{
+			font-size: $fz_1;
+			text-align: center;
+		}
+	}
+	.achievement__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		}
+	}
 //
 
 
@@ -286,6 +326,9 @@ body {
 	}
 	& a {
 		color: $color_5;
+		&:hover{
+			color: $color_1;
+		}
 	}
 }
 

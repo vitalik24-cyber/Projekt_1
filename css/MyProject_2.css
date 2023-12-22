@@ -139,6 +139,9 @@ body {
   padding: 0px auto;
   color: #fff;
 }
+.menu__link:hover {
+  color: #d89b64;
+}
 
 @media (max-width: 767px) {
   body.lock {
@@ -275,6 +278,41 @@ body {
   .button__book a {
     font-size: 14px;
   }
+  .perfection__text p {
+    text-align: center;
+  }
+  .perfection__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details {
+    margin: 0px auto;
+    max-width: 750px;
+    max-height: 450px;
+  }
+  .details__body {
+    max-width: 600px;
+    max-height: 300px;
+  }
+  .details_body_content {
+    max-width: 550px;
+    max-height: 255px;
+  }
+  .details_body_content h2 {
+    font-size: 16px;
+  }
+  .details_body_content p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .achievement__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .swipe {
   display: inline-flex;
@@ -341,6 +379,9 @@ body {
 }
 .button__book a {
   color: #d89b64;
+}
+.button__book a:hover {
+  color: #fff;
 }
 
 .perfection {
