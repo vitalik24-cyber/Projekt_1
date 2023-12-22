@@ -91,8 +91,9 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  flex: 0 1 auto;
+  align-items: center;
   flex-wrap: wrap;
+  flex: 0 1 auto;
   max-width: 1823px;
   margin: 0px auto;
 }
@@ -125,11 +126,12 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  margin: 79px 0px 0px 0px;
+  margin: 79px 10px 0px 0px;
 }
 
 .menu__list {
   display: flex;
+  margin-right: 10px;
 }
 
 .menu__link {
@@ -143,7 +145,41 @@ body {
   color: #d89b64;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+  .wrapper {
+    max-height: 5050px;
+  }
+  .header {
+    height: 700px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .swipe {
+    display: flex;
+    justify-content: space-around;
+    max-width: 875px;
+  }
+  .swipe__img img {
+    width: 600px;
+  }
+  .button {
+    max-width: 875px;
+  }
+  .perfection p {
+    text-align: center;
+  }
+  .perfection__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .achievement__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
   body.lock {
     overflow: hidden;
   }
@@ -152,9 +188,9 @@ body {
   }
   .header__logo {
     position: relative;
-    top: 0;
-    left: 30px;
-    flex: 0 0 70px;
+    top: 0px;
+    left: -280px;
+    flex: 0 0 50px;
   }
   .header__burger {
     display: block;
@@ -312,6 +348,171 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    height: 400px;
+  }
+  .header__logo {
+    position: relative;
+    top: 0;
+    left: -130px;
+    flex: 0 0 70px;
+  }
+  .header__burger {
+    display: block;
+    text-align: right;
+    position: relative;
+    left: 250px;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    top: -125%;
+    left: 70px;
+    overflow: auto;
+    width: 410px;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+  }
+  .menu.active {
+    top: 50px;
+    left: 250px;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__link {
+    color: #fff;
+    font-size: 18px;
+  }
+  .menu__link:hover {
+    color: #d89b64;
+  }
+  .swipe__img img {
+    width: 350px;
+  }
+  .swipe__left img {
+    display: none;
+  }
+  .swipe__right img {
+    display: none;
+  }
+  .button__number button {
+    display: none;
+  }
+  .button__text p {
+    display: none;
+  }
+  .button__book button {
+    position: relative;
+    top: -60px;
+    left: -150px;
+    max-width: 120px;
+    max-height: 30px;
+  }
+  .button__book a {
+    font-size: 14px;
+    color: #d89b64;
+  }
+  .perfection__text {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .body__img1 {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .body__img2 {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .body__img3 {
+    max-width: 400px;
+    max-height: 350px;
+  }
+  .details {
+    max-width: 420px;
+  }
+  .details__body {
+    max-width: 390px;
+    background: url("none");
+  }
+  .details_body_content {
+    max-width: 380px;
+  }
+  .achievement__text {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .achievement__text p {
+    text-align: center;
+  }
+  .achievement__diffrent {
+    max-width: 400px;
+  }
+  .achievement__diffrent p {
+    text-align: center;
+  }
+  .achievement__fresh {
+    max-width: 400px;
+  }
+  .achievement__fresh p {
+    text-align: center;
+  }
+  .achievement__best {
+    max-width: 400px;
+  }
+  .achievement__best h2 {
+    text-align: center;
+  }
+  .achievement__best p {
+    text-align: center;
   }
 }
 .swipe {

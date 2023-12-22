@@ -36,8 +36,9 @@ body {
 .container {
 	display: flex;
 	justify-content: space-between;
-	flex: 0 1 auto;
+	align-items: center;
 	flex-wrap: wrap;
+	flex: 0 1 auto;
 	max-width: 1823px;
 	margin: 0px auto;
 }
@@ -72,10 +73,11 @@ body {
 	display: flex;
 	align-items: center;
 	//border: yellow 2px solid;
-	margin: 79px 0px 0px 0px;
+	margin: 79px 10px 0px 0px;
 }
 .menu__list {
 	display: flex;
+	margin-right: 10px;
 }
 .menu__link {
 	font-family: "Kantia", serif;
@@ -83,26 +85,63 @@ body {
 	padding-left: 100px;
 	padding: 0px auto;
 	color: $color_1;
-	&:hover{
+	&:hover {
 		color: $color_5;
 	}
 }
+//бургер меню + адаптация(1024px)
+@media (max-width: 1024px) {
+	.wrapper {
+		max-height: 5050px;
+	}
+	.header {
+		height: 700px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-around;
+	}
+	.swipe {
+		display: flex;
+		justify-content: space-around;
+		max-width: 875px;
+	}
+	.swipe__img img {
+		width: 600px;
+	}
+	.button {
+		max-width: 875px;
+	}
+	.perfection {
+		& p {
+			text-align: center;
+		}
+	}
+	.perfection__body {
+		display: flex;
+		flex-direction: column;
+	}
+	.achievement__body {
+		display: flex;
+		flex-direction: column;
+	}
+}
 
-// Рисуем бургер меню + адаптация
-@media ( max-width: 767px){
+// Рисуем бургер меню + адаптация(768px)
+@media (max-width: 768px) {
 	body.lock {
 		overflow: hidden;
 	}
-	.header{
+	.header {
 		height: 400px;
 	}
-	.header__logo{
+	.header__logo {
 		position: relative;
-		top: 0;
-		left: 30px;
-		flex: 0 0 70px;
+		top: 0px;
+		left: -280px;
+		flex: 0 0 50px;
 	}
-	.header__burger{
+	.header__burger {
 		display: block;
 		text-align: right;
 		position: relative;
@@ -121,15 +160,15 @@ body {
 		height: 2px;
 		top: 9px;
 		transition: all 0.3s ease 0s;
-}
-.header__burger:before,
+	}
+	.header__burger:before,
 	.header__burger:after {
 		content: "";
 		background-color: $color_1;
 		position: absolute;
 		width: 100%;
 		height: 2px;
-		left:0;
+		left: 0;
 		transition: all 0.5s ease 0s;
 	}
 	.header__burger:before {
@@ -159,8 +198,196 @@ body {
 		transition: all 0.5s ease 0s;
 		//padding: 0px 0px 0px 0px;
 	}
-	.menu.active {top: -13px;}
-	.menu__list {display: flex;}
+	.menu.active {
+		top: -13px;
+	}
+	.menu__list {
+		display: flex;
+	}
+	.menu__link {
+		color: $color_1;
+		font-size: $fz_3;
+		&:hover {
+			color: $color_5;
+		}
+	}
+
+	// Переключение картинок(АДПТАЦИЯ)
+	.swipe__img img {
+		width: 350px;
+	}
+	.swipe__left {
+		height: 50px;
+	}
+	.swipe__right {
+		height: 50px;
+	}
+
+	// КНОПКИ HEADER(АДАПТАЦИЯ)
+	//.button{}
+	.button__number {
+		display: block;
+		position: relative;
+		top: 0;
+		left: 25px;
+		& button {
+			position: absolute;
+			left: 10px;
+			max-width: 200px;
+			margin-top: 40px;
+			&:hover {
+				color: $color_5;
+			}
+			&:nth-child(2) {
+				position: absolute;
+				left: 50px;
+				top: 0;
+			}
+			&:nth-child(3) {
+				position: absolute;
+				left: 90px;
+				top: 0;
+			}
+		}
+	}
+	.button__text {
+		height: 30px;
+		width: 300px;
+		& p {
+			margin-left: 105px;
+			text-align: center;
+		}
+	}
+	.button__book {
+		width: 150px;
+		& button {
+			position: relative;
+			top: -60px;
+			max-width: 120px;
+			max-height: 30px;
+		}
+		& a {
+			font-size: $fz_1;
+		}
+	}
+	.perfection__text {
+		& p {
+			text-align: center;
+		}
+	}
+	.perfection__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.details {
+		margin: 0px auto;
+		max-width: 750px;
+		max-height: 450px;
+	}
+	.details__body {
+		max-width: 600px;
+		max-height: 300px;
+	}
+	.details_body_content {
+		max-width: 550px;
+		max-height: 255px;
+		& h2 {
+			font-size: $fz_2;
+		}
+		& p {
+			font-size: $fz_1;
+			text-align: center;
+		}
+	}
+	.achievement__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+//бургер меню + адаптация(425px)
+@media (max-width: 425px) {
+	body.lock {
+		overflow: hidden;
+	}
+	.header {
+		height: 400px;
+	}
+	.header__logo {
+		position: relative;
+		top: 0;
+		left: -130px;
+		flex: 0 0 70px;
+		//max-width: 400px;
+	}
+	.header__burger {
+		display: block;
+		text-align: right;
+		position: relative;
+		left: 250px;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: $color_1;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: "";
+		background-color: $color_1;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.5s ease 0s;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.menu {
+		display: block;
+		position: fixed;
+		top: -125%;
+		left: 70px;
+		overflow: auto;
+		width: 410px;
+		height: 100%;
+		transition: all 0.5s ease 0s;
+		//padding: 0px 0px 0px 0px;
+	}
+	.menu.active {
+		top: 50px;
+		left: 250px;
+	}
+	.menu__list {
+		display: block;
+	}
 	//.menu_list li {//margin: 0px 0px 0px 0px;}
 	.menu__link {
 		color: $color_1;
@@ -171,99 +398,102 @@ body {
 	}
 
 	// Переключение картинок(АДПТАЦИЯ)
-	.swipe__img img{width: 350px;}
-	.swipe__left{height: 50px;}
-	.swipe__right{height: 50px;}
+	.swipe__img img {
+		width: 350px;
+	}
+	.swipe__left {
+		& img {
+			display: none;
+		}
+	}
+	.swipe__right {
+		& img {
+			display: none;
+		}
+	}
 
 	// КНОПКИ HEADER(АДАПТАЦИЯ)
 	//.button{}
-	.button__number{
-		display: block;
-		position: relative;
-		top: 0;
-		left: 25px;
-		& button{
-			position: absolute;
-			left: 10px;
-			max-width: 200px;
-			margin-top: 40px;
-			&:hover{
-				color: $color_5;
-			}
-			&:nth-child(2){
-				position: absolute;
-				left: 50px;
-				top: 0;
-			}
-			&:nth-child(3){
-				position: absolute;
-				left: 90px;
-				top: 0;
-			}
+	.button__number {
+		& button {
+			display: none;
 		}
 	}
-	.button__text{
-		height: 30px;
-		width: 300px;
-		& p{
-			margin-left: 105px;
-			text-align: center;
+	.button__text {
+		& p {
+			display: none;
 		}
 	}
-	.button__book{
-		width: 150px;
-		& button{
+	.button__book {
+		& button {
 			position: relative;
 			top: -60px;
+			left: -150px;
 			max-width: 120px;
 			max-height: 30px;
 		}
-		& a{
+		& a {
 			font-size: $fz_1;
-			
+			color: $color_5;
 		}
 	}
-	.perfection__text{
-		& p{
-			text-align: center;
-		}
-	}
-	.perfection__body {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.details{
+	.perfection__text {
+		max-width: 400px;
 		margin: 0px auto;
-		max-width: 750px;
-		max-height: 450px;
 	}
-	.details__body{
-		max-width: 600px;
-		max-height: 300px;
+	.body__img1 {
+		max-width: 400px;
+		margin: 0px auto;
 	}
-	.details_body_content{
-		max-width: 550px;
-		max-height: 255px;
-		& h2{
-			font-size: $fz_2;
-		}
-		& p{
-			font-size: $fz_1;
+	.body__img2 {
+		max-width: 400px;
+		margin: 0px auto;
+	}
+	.body__img3 {
+		max-width: 400px;
+		max-height: 350px;
+	}
+	.details {
+		max-width: 420px;
+	}
+	.details__body {
+		max-width: 390px;
+		background: url("none");
+	}
+	.details_body_content {
+		max-width: 380px;
+	}
+
+	.achievement__text {
+		max-width: 400px;
+		margin: 0px auto;
+		& p {
 			text-align: center;
 		}
 	}
-	.achievement__body {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
+	.achievement__diffrent {
+		max-width: 400px;
+		& p {
+			text-align: center;
 		}
 	}
+	.achievement__fresh {
+		max-width: 400px;
+		& p {
+			text-align: center;
+		}
+	}
+	.achievement__best {
+		max-width: 400px;
+		& h2 {
+			text-align: center;
+		}
+		& p {
+			text-align: center;
+		}
+	}
+}
 //
-
-
 
 .swipe {
 	display: inline-flex;
@@ -273,14 +503,12 @@ body {
 }
 .swipe__left {
 	display: flex;
-	
 }
 .swipe__img {
 	display: flex;
 }
 .swipe__right {
 	display: flex;
-
 }
 
 // КНОПКИ HEADER
@@ -299,7 +527,7 @@ body {
 		font-size: $fz_4;
 		background: rgba(255, 255, 255, 0);
 		color: #ffffff;
-		&:hover{
+		&:hover {
 			color: $color_5;
 		}
 	}
@@ -326,7 +554,7 @@ body {
 	}
 	& a {
 		color: $color_5;
-		&:hover{
+		&:hover {
 			color: $color_1;
 		}
 	}
@@ -491,7 +719,7 @@ body {
 		border: 1px rgba(21, 27, 40, 0.15) solid;
 		background-color: $color_1;
 		color: $color_5;
-		&:hover{
+		&:hover {
 			color: $color_4;
 		}
 	}
